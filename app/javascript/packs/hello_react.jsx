@@ -6,6 +6,7 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 import PropTypes from 'prop-types'
 import App from '../comoponent/index'
+import Example from '../comoponent/from'
 
 const Hello = props => (
   <div>Hello {props.name}!</div>
@@ -21,14 +22,16 @@ Hello.propTypes = {
 
 document.addEventListener('DOMContentLoaded', () => {
   ReactDOM.render(
+
     <App />,
+    // <Example />,
     document.body.appendChild(document.createElement('div')),
   )
 })
 
-// document.addEventListener('DOMContentLoaded', () => {
-//   ReactDOM.render(
-//     <index/>,
-//     document.body.appendChild(document.createElement('div')),
-//   )
-// })
+  // document.addEventListener('DOMContentLoaded', () => {
+  //   ReactDOM.render(
+  //     
+  //     document.body.appendChild(document.createElement('div')),
+  //   )
+  // })
